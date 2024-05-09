@@ -1,0 +1,74 @@
+.skills-overlay{
+  background: var(--foreground);
+  height: 10rem;
+}
+.skills .container{
+  margin-top: -10rem;
+}
+.skills .grid{
+  background-color: var(--background);
+  margin: 0 2rem;
+  border-radius: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  box-shadow: 0 2px 5px var(--primary-light);
+}
+.skills .skill{
+  text-align: center;
+  border-right: 0;
+  border-bottom: 1px solid var(--primary-light);
+  color: var(--primary);
+  padding: 5rem 2rem;
+}
+
+.skills .skill:last-child{
+  border-right: 0;
+  border-bottom: 0;
+}
+
+@media( width > 600px){
+  .skills .grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .skills .skill{
+    border-right: 1px solid var(--primary-light);
+    border-bottom: 0;
+  }
+}
+
+/* SKILL ITEM */
+
+.skill-icon{
+  width: 7rem;
+  height: 7rem;
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border-radius: 50%;
+}
+.skill-icon img{
+  width: 4rem;
+  height: 4rem;
+}
+.skill-title{
+ font-weight: bold;
+ font-size: 2rem;
+ margin: 3rem 0;
+}
+.skill-desc{
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+}
+.skill-sub{
+  font-size: 1.7rem;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  color: var(--foreground);
+}
+.skill-txt{
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+}
