@@ -1,0 +1,87 @@
+.recent-work{
+  text-align: center;
+  color: var(--primary);
+  padding: 0 2rem;
+}
+
+.recent-work .title{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 8rem;
+  margin-bottom: 3.5rem;
+}
+.recent-work .subtitle{
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.recent-work .subtitle a{
+  color: var(--foreground);
+  text-decoration: none;
+}
+.recent-work .subtitle a:hover{
+  text-decoration: underline;
+}
+.recent-work .grid{
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media( width > 600px){
+  .recent-work .title{
+    font-size: 3.5rem;
+  }
+  .recent-work .grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media( width > 900px){
+  .recent-work .grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* GRID ITEM */
+
+.recent-work .item{
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+.recent-work .item .image{
+  width: 100%;
+  height: auto;
+  transition: all ease .5s;
+}
+.recent-work .item .overlay{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  inset: 0 0 0 0;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  padding: 2rem;
+  font-size: 1.9rem;
+  line-height: 2.5rem;
+  transition: all ease .3s;
+  opacity: 0;
+}
+.recent-work .item .overlay .button{
+  margin-top: 2rem;
+  color: var(--primary-foreground);
+  text-decoration: none;
+  
+}
+.recent-work .item:hover .image{
+  transform: scale(1.2);
+}
+.recent-work .item:hover .overlay{
+  opacity: 0.9;
+}
+.recent-work .seemore{
+  margin: 6rem 0;
+  font-size: 2rem;
+  text-decoration: none;
+}
