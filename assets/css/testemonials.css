@@ -1,0 +1,81 @@
+.testimonials{
+  padding: 8rem 2rem;
+  text-align: center;
+  color: var(--primary);
+}
+.testimonials .title{
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 3rem;
+  margin-bottom: 3rem;
+}
+.testimonials .subtitle{
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.testimonials .slider{
+  max-width: 50rem;
+  overflow-x: hidden;
+  margin:  auto;
+}
+.testimonials .slider input{
+  display: none;
+}
+.testimonials .slider .slider-area{
+  width: 200%;
+  display: flex;
+  transition: all ease .5s;
+}
+
+.testimonials .slider .slider-item{
+  width: 100%;
+}
+.testimonials .slider-item img{
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 4rem;
+}
+.testimonials .slider-item .desc{
+  font-size: 2rem;
+  line-height: 3.3rem;
+  margin-bottom: 4rem;
+}
+.testimonials .slider-item .name{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.testimonials .slider-item .role{
+  font-size: 1.7rem;
+}
+.testimonials .slider-nav{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+.testimonials .slider-nav label{
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 2px solid var(--primary-light);
+  transition: all ease .5s;
+}
+#slider-1:checked ~ .slider-area{
+  margin-left: 0%;
+}
+
+#slider-2:checked ~ .slider-area{
+  margin-left: -100%;
+}
+#slider-1:checked ~ .slider-nav .n1{
+  background-color: var(--foreground);
+}
+#slider-2:checked ~ .slider-nav .n2{
+  background-color: var(--foreground);
+}

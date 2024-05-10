@@ -1,0 +1,43 @@
+.colaboration{
+  background-color: var(--foreground);
+  padding: 8rem 2rem;
+  color: var(--primary-foreground);
+  text-align: center;
+}
+.colaboration .title{
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+}
+.colaboration .subtitle{
+  font-size: 1.7rem;
+  margin-top: 3rem;
+}
+.colaboration .button{
+  border: 1px solid var(--background);
+  color: var(--primary-foreground);
+  text-decoration: none;
+  border-radius: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 2rem;
+  margin-top: 3rem;
+  transition: all ease .3s;
+}
+.colaboration .button:hover{
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+@media( width > 600px ){
+  .colaboration .title{
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .colaboration .subtitle{
+    font-size: 2rem;
+    margin-top: 2.5rem;
+  }
+  .colaboration .button{
+    margin-top: 3rem;
+  }
+}
