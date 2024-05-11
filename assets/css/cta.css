@@ -1,0 +1,45 @@
+.cta{
+  background: var(--foreground);
+}
+.cta .overlay{
+  background: var(--background);
+  height: 6rem;
+}
+.cta .container{
+  margin-top: -6rem;
+}
+.cta .area{
+  margin: 0 2rem;
+  padding: 4rem;
+  text-align: center;
+  color: var(--primary-foreground);
+  background-color: var(--primary);
+  border-radius: 1.5rem;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+}
+.cta .area-side{
+  flex: 1;
+}
+.cta .title{
+  font-weight: bold;
+  font-size: 3rem;
+}
+.cta .subtitle{
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+.cta .button{
+  color: var(--background);
+  font-size: 2rem;
+  text-decoration: none;
+
+}
+@media( width > 900px){
+  .cta .area{
+    flex-direction: row;
+  }
+}
