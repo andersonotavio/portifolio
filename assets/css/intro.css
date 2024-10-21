@@ -24,4 +24,7 @@
   .box .title{
     font-size: 3rem;
   }
+  .box .subtitle{
+    text-align: left;
+  }
 }
