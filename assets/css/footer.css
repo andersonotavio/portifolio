@@ -5,9 +5,10 @@
   text-align: center;
 }
 .footer .logo{
-  width: 4rem;
+  width: 7rem;
   height: auto;
   margin-bottom: 4rem;
+  border-radius: 50%;
 }
 .footer .title{
   font-size: 2.2rem;
@@ -45,4 +46,9 @@
 }
 .footer .cnpj{
   font-size: 1.5rem;
+}
+@media (width > 600px){
+  .footer .logo{
+    width: 10rem;
+  }
 }
