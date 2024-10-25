@@ -20,6 +20,7 @@
   margin: auto;
   margin-bottom: 5rem;
   border-radius: 50%;
+  box-shadow: 0 3px 47px rgba(0, 0, 0, 0.2);
 }
 .hero-device{
   display: block;

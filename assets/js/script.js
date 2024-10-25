@@ -25,3 +25,37 @@ const toggleSlider = () =>{
 }
 
 setInterval(toggleSlider, 5000);
+
+function avatarMotion(){
+  $('.js-tilt').tilt({
+    glare: true,
+    maxGlare: .5
+})
+}
+avatarMotion()
+
+function timeL(){
+  document.addEventListener('DOMContentLoaded', () =>{
+    let tl = new TimelineMax();
+
+    tl.fromTo('.bg-loader', 1, {width: '100%'}, 
+     { width: '0%',delay: 3, ease: Expo.easeInOut})
+
+     .fromTo('.logo', 1, {y: -70, opacity: 0}, 
+      {y: 0, opacity: 1,ease: Expo.easeInOut}, "-=0.5")
+
+      .fromTo('header .button', 1, {y: -70, opacity: 0}, 
+        {y: 0, opacity: 1,ease: Expo.easeInOut}, "-=0.5")
+  })
+}
+
+timeL()
+
+AOS.init();
+
+
+setTimeout(() => {
+ 
+let html = document.querySelector('html')
+  html.classList.remove("hidden");
+}, 4000);
